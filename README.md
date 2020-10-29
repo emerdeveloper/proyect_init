@@ -1,6 +1,16 @@
 # proyect_init
+Flutter App that change state on StatefulWidget
 
-A new Flutter project.
+Applying the concepts:
+
+* Scaffold
+* AppBar
+* Column
+* Row
+* FloatingActionButton
+* SizedBox
+* StatefulWidget
+* StatelessWidget
 
 ## Getting Started
 
