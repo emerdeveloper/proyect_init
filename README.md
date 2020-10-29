@@ -17,4 +17,4 @@ Applying the concepts:
 
 |  Screen      |
 |------------|
-| ![Portrait](Documentation/screen.png) |
+| ![Portrait](documentation/screen.png) |
