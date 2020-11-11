@@ -11,6 +11,7 @@ Applying the concepts:
 * SizedBox
 * StatefulWidget
 * StatelessWidget
+* BLoC Pattern
 
 ## Screenshots
 
