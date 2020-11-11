@@ -7,18 +7,18 @@ class CounterBloc {
 
   final _counterStateController = StreamController<int>();
   StreamSink<int> get _inCounter => _counterStateController.sink; //in
-  //For Events
+  //For Events, expose event
   Stream<int> get counter => _counterStateController.stream; //out
 
   final _counterEventController = StreamController<CounterEvent>();
-  //For State
+  //For State, Trigger 
   Sink<CounterEvent> get counterEventSink => _counterEventController.sink;
 
   CounterBloc() {
-    _counterEventController.stream.listen(_mapEventToState);
+    _counterEventController.stream.listen(_updateCounter);
   }
 
-  void _mapEventToState(CounterEvent event) {
+  void _updateCounter(CounterEvent event) {
     _counter = event.invoke(_counter);
     _inCounter.add(_counter);
   }
