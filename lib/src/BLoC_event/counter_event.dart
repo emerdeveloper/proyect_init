@@ -26,9 +26,9 @@ class DecrementEvent implements CounterEvent {
 class ResetEvent implements CounterEvent {
   @override
   int invoke(int number) {
-    return _substract(number);
+    return _reset(number);
   }
-  int _substract(int number) {
+  int _reset(int number) {
     return 0;
   }
 }
